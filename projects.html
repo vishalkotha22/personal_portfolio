@@ -37,23 +37,104 @@
             <header class="major"><h1>Projects</h1></header>
 
             <article>
-              <header><h3>Cross-Dataset Multimodal Neural Network</h3></header>
-              <p><strong>Tech:</strong> Python, TensorFlow, Matplotlib</p>
+              <header><h3>Cache Memory Simulator</h3></header>
               <ul>
-                <li>Performed cross-dataset testing with a standard CNN and noted lower accuracies on unseen data</li>
-                <li>Designed and implemented a multimodal neural network, increasing mean accuracy by 2.63%</li>
-                <li>Published at IEEE DSAA Student Poster Track</li>
+                <li>Built a C-based, set-associative cache simulator with customizable s, E, and b parameters</li>
+                <li>Implemented LRU eviction to track hits, misses, and evictions from Valgrind-style traces</li>
+                <li>Achieved high throughput with O(1) set lookups and minimal per-access overhead</li>
               </ul>
             </article>
 
             <article>
-              <header><h3>Ichos: Audio-Based Diagnosis App</h3></header>
-              <p><strong>Tech:</strong> Python, Flask, scikit-learn, TensorFlow, HTML/CSS</p>
+              <header><h3>Dynamic Memory Allocator</h3></header>
               <ul>
-                <li>Diagnosed SLI, Alzheimer’s, and 7 respiratory issues from audio data with 77%–93% validation accuracy</li>
-                <li>Designed a cost-effective digital stethoscope and filed a USPTO provisional patent</li>
+                <li>Developed a malloc-compatible C allocator using 16 segregated free-list classes</li>
+                <li>Incorporated boundary-tag coalescing and block splitting for low fragmentation</li>
+                <li>Managed heap growth in 4&nbsp;KB sbrk increments for seamless dynamic allocation</li>
               </ul>
             </article>
+
+            <article>
+              <header><h3>High-Frequency Trading Market Simulator</h3></header>
+              <ul>
+                <li>Engineered a high-frequency trading simulator in C++ leveraging lock-free data structures, custom memory pools, and multithreading</li>
+                <li>Integrated real-world market data using the Alpaca API via libcurl, enabling live data ingestion</li>
+                <li>Optimized system performance using high-resolution profiling and advanced memory allocation techniques, decreasing latency</li>
+              </ul>
+            </article>
+
+            <article>
+              <header><h3>Cross-Dataset Multimodal Neural Network</h3></header>
+              <ul>
+                <li>Evaluated standard multi-modal neural network performance across compatible image datasets for glaucoma and observed lower accuracies on unseen data</li>
+                <li>Implemented improvements to enhance generalizability of multi-modal networks</li>
+                <li>Segmented images with U-Net, calculated metrics, cropped, and fed into the final model, increasing average accuracy by 2.63%</li>
+                <li>Published at IEEE DSAA 2022 Student Poster Track</li>
+              </ul>
+            </article>
+
+            <article>
+              <header><h3>Physical Education Trainer (PET)</h3></header>
+              <ul>
+                <li>Suggested form improvements for squats, sit ups, bicep curls, planks, and push ups given a workout video using machine learning</li>
+                <li>Provided personalized exercise form feedback within 15 seconds for videos 1 minute long or less</li>
+                <li>Built front-end with Flask, Python, HTML, Bootstrap, and CSS; used MediaPipe to track key joint movements</li>
+              </ul>
+            </article>
+
+            <article>
+              <header><h3>Ichos</h3></header>
+              <ul>
+                <li>Diagnosed SLI, Alzheimer’s, and seven respiratory issues using audio data</li>
+                <li>Achieved 77%, 93.1%, and 82.4% validation accuracies for Alzheimer’s, respiratory diseases, and SLI</li>
+                <li>Designed a cost-friendly digital stethoscope; filed a USPTO provisional patent</li>
+              </ul>
+            </article>
+
+            <article>
+              <header><h3>Walker</h3></header>
+              <ul>
+                <li>Identified objects and narrated their locations aloud to aid visually impaired users</li>
+                <li>Ran 10% faster than TapTapSee, a similar application</li>
+                <li>Implemented YOLO for object detection and Google Text-to-Speech for narration</li>
+              </ul>
+            </article>
+
+            <article>
+              <header><h3>MedScribe</h3></header>
+              <ul>
+                <li>Translated and summarized legal documents to remove language barriers in clinical trial participation</li>
+                <li>Used Google Cloud Translation API for translation and OpenAI APIs for summarization</li>
+                <li>Built web application using JavaScript, Flask, HTML, and CSS</li>
+              </ul>
+            </article>
+
+            <article>
+              <header><h3>OptiGuard</h3></header>
+              <ul>
+                <li>Detected violence in livestreams and tracked individuals across feeds with 68% accuracy</li>
+                <li>Used MobileNet Bi-LSTM for violence detection, YOLO for face detection, and SSIM for face recognition</li>
+                <li>Employed multithreading to process 20+ FPS across simultaneous streams</li>
+              </ul>
+            </article>
+
+            <article>
+              <header><h3>MoneyCounter</h3></header>
+              <ul>
+                <li>Identified coins and tallied total amounts from images with 85% accuracy in C++</li>
+                <li>Implemented Canny edge detection and non-max suppression; used Hough Circle Transform and Bresenham’s algorithms</li>
+              </ul>
+            </article>
+
+            <article>
+              <header><h3>SubmitServer</h3></header>
+              <ul>
+                <li>Simulated a submit server in C by spawning child processes to run programs</li>
+                <li>Utilized pipes for interprocess communication to capture child process output</li>
+                <li>Applied multithreading and semaphores to handle data races and speed up execution</li>
+              </ul>
+            </article>
+
           </div>
         </section>
       </div>
